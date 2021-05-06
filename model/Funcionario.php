@@ -63,7 +63,7 @@ class Funcionario extends Conexao
 		return $sql->execute();
 	}
 
-	function atualizarfuncionario($dados, $id_funcionario) 
+	public function atualizarfuncionario($dados, $id_funcionario) 
 	{
 		$sql = "UPDATE funcionario SET 
 		nome_funcionario = :nome_funcionario, 
